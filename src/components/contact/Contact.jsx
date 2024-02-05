@@ -16,9 +16,10 @@ const variants = {
     },
   },
 };
-const serviceID = process.env.YOUR_SERVICE_ID
-const templateID = process.env.YOUR_TEMPLATE_ID
-const key = process.env.YOUR_PUBLIC_KEY
+// const serviceID = process.env.YOUR_SERVICE_ID;
+// const templateID = process.env.YOUR_TEMPLATE_ID;
+// const key = process.env.YOUR_PUBLIC_KEY
+
 function Contact() {
     // eslint-disable-next-line no-undef
 
@@ -28,8 +29,8 @@ function Contact() {
   const sendEmail = (e) => {
     e.preventDefault();
     emailjs
-      .sendForm("serviceID", "templateID", formRef.current, {
-        publicKey: "key",
+      .sendForm("service_i33qz8r", "template_0z3c6k3", formRef.current, {
+        publicKey: "kzwDuRcxjt3gFMqInx9mU",
       })
       .then(
         (result) => {
